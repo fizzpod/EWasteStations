@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CircuitBack — Find e-waste drop-off points in Singapore</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
@@ -137,6 +138,11 @@
     <div id="rewardsApp" style="display:none;">
       <div class="rewards-grid">
         <div class="points-card">
+          <div class="eyebrow">Signed in as</div>
+          <div class="name-row" style="display:flex;align-items:center;gap:8px;margin:6px 0 16px;">
+            <span class="mono" id="displayNameLabel" style="font-size:15px;"></span>
+            <button class="btn-sm btn-ghost" id="editNameBtn" style="border-color:rgba(238,240,233,0.4);color:var(--paper);padding:4px 9px;">Edit</button>
+          </div>
           <div class="eyebrow">Spendable balance</div>
           <div class="big mono" id="bigPoints">0</div>
           <div class="sub" id="pointsSub">pts available to redeem</div>
